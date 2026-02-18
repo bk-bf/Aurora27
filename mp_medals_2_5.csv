@@ -1,0 +1,72 @@
+Tomb Raider Leader,Recover 250 Abandoned Installations,TBR,2910,N,57.png,57
+Tomb Raider class I,Recover 100 Abandoned Installations,TBR,2900,N,39.png,39
+Tomb Raider class II,Recover 25 Abandoned Installations,TBR,2810,N,56.png,56
+Tomb Raider class III,Recover 10 Abandoned Installations,TBR,2800,N,38.png,38
+Loyal Servant,Thirty Years of Service,LYL 30,2700,N,30.png,30
+Loyal Servant,Twenty Years of Service,LYL 20,2600,N,29.png,29
+Loyal Servant,Ten Years of Service,LYL 10,2500,N,28.png,28
+Scholar Leader,Generate 250000 Research Points,SCH,2410,N,55.png,55
+Scholar class I,Generate 100000 Research Points,SCH,2400,N,25.png,25
+Scholar class II,Generate 25000 Research Points,SCH,2310,N,54.png,54
+Scholar class III,Generate 10000 Research Points,SCH,2300,N,24.png,24
+Researcher class I,Completed Five Research Projects,RSH,2200,N,27.png,27
+Researcher class II,Completed Research Project,RSH,2100,N,26.png,26
+Archaeologist Leader,Ten Ancient Constructs Discovered,ARC,2062,N,70.png,70
+Archaeologist class I-B,Three Ancient Constructs Discovered,ARC,2061,N,62.png,62
+Archaeologist class II-B,Ancient Construct Discovered,ARC,2060,N,61.png,61
+Archaeologist Leader-B,Discover Ten Alien Ruins,ARC,2052,N,63.png,63
+Archaeologist class I,Discover Three Alien Ruins,ARC,2051,N,53.png,53
+Archaeologist class II,Discover Alien Ruins,ARC,2050,N,2.png,2
+Salvager class I,Salvage 250000 tons,SVG,2022,N,52.png,52
+Salvager class II,Salvage 100000 tons,SVG,2021,N,51.png,51
+Salvager class III,Salvage 25000 tons,SVG,2020,N,50.png,50
+Physicist Leader,Stabilise 25 Jump Points or Lagrange Points,PHY,2013,N,71.png,71
+Physicist class I,Stabilise 10 Jump Points or Lagrange Points,PHY,2012,N,49.png,49
+Physicist class II,Stabilise 3 Jump Points or Lagrange Points,PHY,2011,N,48.png,48
+Physicist class III,Stabilise 1 Jump Point or Lagrange Point,PHY,2010,N,47.png,47
+Spelunker Leader,Discover 1000 System Bodies With Minerals,SPL,2000,N,19.png,19
+Spelunker class I,Discover 250 System Bodies With Minerals,SPL,1910,N,65.png,65
+Spelunker class II,Discover 100 System Bodies With Minerals,SPL,1900,N,18.png,18
+Spelunker class III,Discover 50 System Bodies With Minerals,SPL,1890,N,69.png,69
+Finder Leader,Discover 100 Jump Points,FND,1800,N,21.png,21
+Finder class I,Discover 25 Jump Points,FND,1710,N,68.png,68
+Finder class II,Discover 10 Jump Points,FND,1700,N,20.png,20
+Columbus class I,Three Habitable Worlds Discovered,CLB,1650,N,33.png,33
+Columbus class II,Habitable World Discovered,CLB,1625,N,32.png,32
+Explorer Leader,Discover 100 New Star Systems,EXP,1620,N,59.png,59
+Explorer class I,Discover 25 New Star Systems,EXP,1610,N,58.png,58
+Explorer class II,Discover 10 New Star Systems,EXP,1600,N,22.png,22
+Explorer  class III,Discover New Star System,EXP,1500,N,1.png,1
+Wounded,Suffer Internal Damage,WND,1400,N,14.png,14
+Bullet Proof,Suffer Armour Damage,BPF,1300,N,13.png,13
+Survivor,Survive Ship Destruction,SRV,1200,N,3.png,3
+Defender Leader,Destroy 2500 Hostile Missiles,AAD,1105,N,67.png,67
+Defender class I,Destroy 1000 Hostile Missiles,AAD,1100,N,23.png,23
+Defender class III,Destroy 500 Hostile Missiles,AAD,1002,N,72.png,72
+Defender class III,Destroy 250 Hostile Missiles,AAD,1001,N,64.png,64
+Defender class IV,Destroy 100 Hostile Missiles,AAD,1000,N,12.png,12
+Defender class V,Destroy 25 Hostile Missiles,AAD,900,N,8.png,8
+Paratrooper class I,Participate in Five Combat Drops Transport,PTR,880,N,37.png,37
+Paratrooper class II,Participate in Combat Drop Transport,PTR,860,N,36.png,36
+Pirate Leader,Capture Three Hostile Ships in Boarding Combat,PRT,851,N,66.png,66
+Pirate class I,Capture Hostile Ship in Boarding Combat,PRT,850,N,31.png,31
+Space Marine class I,Participate in Five Combat Drops Formation,SMR,840,N,35.png,35
+Space Marine class II,Participate in Combat Drop Formation,SMR,830,N,34.png,34
+Trooper Leader,Destroy 100000 tons of Hostile Ground Forces,TRP,825,N,60.png,60
+Trooper class I,Destroy 25000 tons of Hostile Ground Forces,TRP,820,N,46.png,46
+Trooper class II,Destroy 10000 tons of Hostile Ground Forces,TRP,800,N,17.png,17
+Trooper class III,Destroy 5000 tons of Hostile Ground Forces,TRP,750,N,45.png,45
+Trooper class IV,Destroy 2500 tons of Hostile Ground Forces,TRP,725,N,44.png,44
+Trooper class V,Destroy 1000 tons of Hostile Ground Forces,TRP,700,N,16.png,16
+Hunter,Destroy Hostile Ground Unit,HNT,650,N,15.png,15
+Raider Leader,Destroy 2500000 tons of Commercial Shipping,RDR,620,N,43.png,43
+Raider class I,Destroy 1000000 tons of Commercial Shipping,RDR,600,N,7.png,7
+Raider class II,Destroy 500000 tons of Commercial Shipping,RDR,550,N,42.png,42
+Raider class III,Destroy 250000 tons of Commercial Shipping,RDR,500,N,6.png,6
+Raider,Destroy 100000 tons of Commercial Shipping,RDR,400,N,5.png,5
+Wolf Leader,Destroy 250000 tons of Military Shipping,WLF,320,N,41.png,41
+Wolf class I,Destroy 100000 tons of Military Shipping,WLF,300,N,11.png,11
+Wolf class II,Destroy 50000 tons of Military Shipping,WLF,250,N,40.png,40
+Wolf class III,Destroy 25000 tons of Military Shipping,WLF,200,N,10.png,10
+Wolf class IV,Destroy 10000 tons of Military Shipping,WLF,100,N,9.png,9
+Ace,Destroy Hostile Ship,ACE,50,N,4.png,4

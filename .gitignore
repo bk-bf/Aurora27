@@ -1,0 +1,18 @@
+# Windows thumbnail cache (e.g. Flags/Thumbs.db)
+Thumbs.db
+
+# Log files - regenerated on each run
+*.log
+
+# Debug symbols - not needed for playing
+*.pdb
+
+# Auto-generated save backups - these change every save and would cause merge conflicts.
+# The main save file (AuroraDB.db) is tracked intentionally.
+AuroraDBPreviousSaveBackup.db
+AuroraDBSaveBackup.db
+
+# Build artifacts - in case theme/patch source is ever compiled locally
+**/bin/
+**/obj/
+**/.vs/

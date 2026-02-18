@@ -1,47 +1,66 @@
-# Cristotheme
-A variant on the existing SolarisTheme and DeepBlueTheme Aurora 4x Mods
+# Aurora4x 2.7 — CristoTheme + Cross-Device Sync
 
+This repository is a **pre-patched, ready-to-clone installation of [Aurora4x](http://aurora2.pentarch.org/)** (the C# version, v2.7+) with the CristoTheme mod. It doubles as a **cross-device save sync hack via GitHub** — fork and clone it on any machine, pull, play, push, repeat.
 
-# USAGE (including Aurora and Aurora patch install)
+### What's included
+- **Aurora 4x 2.7.1** (C# version) — game executable and all runtime dependencies
+- **[AuroraPatch](https://github.com/Aurora-Modders/AuroraPatch)** — the mod loader
+- **CristoTheme** — a UI theme derived from SolarisTheme and DeepBlueTheme (see Credits)
+- **`AuroraDB.db`** — the live save file, synced via Git LFS
 
-1. Download [Aurora 4x 1.13](http://aurora2.pentarch.org/index.php?topic=10635.0) <br>
-This step gives you a compressed file, create a folder (I call mine "Aurora - [ENTER YOUR INSTALLED VERSION]") and extract the contents of the downloaded file into there. <br>
-This file is now your Aurora installation directory. Unless specified otherwise, the following instructions that mention 'overwriting base' or similar actions refer to placing the downloaded files into this directory.
+All binary files (`.exe`, `.dll`, `.db`, images) are stored in **Git LFS** so the repo stays fast and the save file is never silently corrupted by a bad merge.
 
-1. Download and apply [Aurora 4x 2.7.0](https://aurora2.pentarch.org/index.php?topic=13866.0) patch <br>
-By "apply" here I mean overwriting the base aurora files with these new files.
+---
 
-1. Download and apply [Aurora 4x 2.7.1](https://aurora2.pentarch.org/index.php?topic=13883.0) patch. Ensure it overwrites the existing files from the 2.5.0 patch as well.
+## Fresh device setup
 
-2. Download Aurora Patch from it's [release](https://github.com/Aurora-Modders/AuroraPatch/releases) page. <br>
-Extract the files and apply them on your Aurora game directory.
+> Requires [Git](https://git-scm.com/) and [Git LFS](https://git-lfs.com/) installed.
 
-1. Download this repository "code > download zip"
+```sh
+git lfs install        # one-time setup per machine
+git clone <this-repo>
+```
 
-2. Copy the contents of the downloaded zip folder from the repository code into the game directory of Aurora.
+That's it. No manual patching needed — everything is already in the repo.
 
-3. Run the game by running the "**AuroraPatch**" EXE file - not the normal "Aurora" EXE. <br>
-Be sure to select the Cristotheme.
+**To play:** run **`AuroraPatch.exe`** (not `Aurora.exe`) and select **CristoTheme** when prompted.
 
+On Linux/macOS you'll need [Wine](https://www.winehq.org/) or similar to run the Windows executable.
 
-## NOTES
+---
 
-1. You may not be able to access the forum on your browser because the website's security certificate is expired. However, this doesn't necessarily matter (*unless you use login details on there that you use elsewhere **DON'T DO THAT EVER YOU SPANNER***) <br>
-In order to load the page remove the "*s*" from the "*https*" in the URL - if your browser (i.e *IE chrome*) doesn't let you do that then use firefox instead.
+## Syncing saves between devices
 
-2. Don't ever report bugs on the forum while using this (or any other mod)
+Aurora stores the entire game state in `AuroraDB.db`. The workflow is:
 
-3. Aurora requires a period (.) as the decimal separator to function correctly. Some countries use a comma (,) for decimals, so be sure to adjust your system settings if necessary.
-4. Overwriting the files usually works, if you want to be more cautious it's recomended that instead you delete the files that are to be overwritten and then bring in the new versions.
+```sh
+# Before sitting down to play — get the latest save
+git pull
 
+# After a session — push your progress
+git add AuroraDB.db
+git commit -m "session: <date or note>"
+git push
+```
+
+> **Important:** always pull before playing and push after. If two devices have diverging saves, Git LFS will detect the conflict instead of silently producing a corrupted database.
+
+---
+
+## Notes
+
+1. The aurora2.pentarch.org forum has an expired SSL certificate. To access it, change `https://` to `http://` in the URL. If your browser won't allow that, use Firefox.
+
+2. Don't report bugs on the official forum while using any mod.
+
+3. Aurora requires a **period (`.`)** as the decimal separator. If your system locale uses a comma, adjust it before playing.
 
 ---
 
 # Credits
-A mod that modifies the [SolarisTheme mod](https://github.com/simast/SolarisTheme/blob/master/SolarisTheme.cs) by simast using some of the changes from the [DeepBlueTheme mod](https://aurora2.pentarch.org/index.php?topic=12593.0) by Jorgen_CAB.
 
-Both of these are built on the back of twitce2double's [ThemeCreator](https://github.com/Aurora-Modders/ThemeCreator)
+CristoTheme is a variant of the [SolarisTheme mod](https://github.com/simast/SolarisTheme/blob/master/SolarisTheme.cs) by simast, incorporating changes from the [DeepBlueTheme mod](https://aurora2.pentarch.org/index.php?topic=12593.0) by Jorgen_CAB.
 
-And all of the above is actually applied using 01010100b's [AuroraPatch](https://github.com/Aurora-Modders/AuroraPatch).
+Both are built on twitce2double's [ThemeCreator](https://github.com/Aurora-Modders/ThemeCreator), applied via 01010100b's [AuroraPatch](https://github.com/Aurora-Modders/AuroraPatch).
 
 Vast majority of credit rightly goes to those people, thank you!

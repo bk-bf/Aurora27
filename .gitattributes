@@ -1,0 +1,23 @@
+# Git LFS tracking for Aurora4x binary files
+# filter=lfs  : store content in LFS instead of git objects
+# diff=lfs    : skip text diffs for these files
+# merge=lfs   : use LFS merge driver (refuses to auto-merge binary files,
+#               preventing save file corruption on conflicting pulls)
+# -text       : never apply line-ending conversions
+
+# --- Save file (most important) ---
+*.db filter=lfs diff=lfs merge=lfs -text
+
+# --- Game & patch executables ---
+*.exe filter=lfs diff=lfs merge=lfs -text
+
+# --- Libraries ---
+*.dll filter=lfs diff=lfs merge=lfs -text
+
+# --- Image assets (flags, medals, ship/station icons, races) ---
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.bmp filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.ico filter=lfs diff=lfs merge=lfs -text
